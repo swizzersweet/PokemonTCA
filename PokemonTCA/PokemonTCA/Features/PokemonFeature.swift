@@ -1,23 +1,21 @@
 //
-//  ContentView.swift
+//  PokemonFeature.swift
 //  PokemonTCA
 //
 //  Created by Jonathan Menard on 2024-07-17.
 //
 
 import ComposableArchitecture
-import SwiftUI
+import Foundation
 
 @Reducer
-struct Root {
-    enum Tab { case counter, profile }
-    
+struct PokemonFeature {
     @ObservableState
     struct State {
-        var currentTab = Tab.counter
+        
     }
     
-    enum Action: Sendable {
+    enum Action {
         
     }
     
@@ -25,13 +23,5 @@ struct Root {
         Reduce { state, action in
             return .none
         }
-    }
-}
-
-struct RootView: View {
-    @Bindable var store: StoreOf<Root>
-    
-    var body: some View {
-        Text("root view")
     }
 }
