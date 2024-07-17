@@ -61,6 +61,7 @@
 		045FE46E2C48133000B1EEE7 /* FavoriteFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFeature.swift; sourceTree = "<group>"; };
 		045FE4702C48139800B1EEE7 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		045FE4732C48409D00B1EEE7 /* PokemonAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
+		045FE4762C485F6300B1EEE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		048397582C47F8080024560E /* PokemonTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0483975B2C47F8080024560E /* PokemonTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTCAApp.swift; sourceTree = "<group>"; };
 		0483975D2C47F8080024560E /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 		0483975A2C47F8080024560E /* PokemonTCA */ = {
 			isa = PBXGroup;
 			children = (
+				045FE4762C485F6300B1EEE7 /* Info.plist */,
 				045FE4722C48406F00B1EEE7 /* Dependencies */,
 				045FE46B2C48102600B1EEE7 /* Features */,
 				0483975B2C47F8080024560E /* PokemonTCAApp.swift */,
@@ -490,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonTCA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokemonTCA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -519,6 +522,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"PokemonTCA/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokemonTCA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
