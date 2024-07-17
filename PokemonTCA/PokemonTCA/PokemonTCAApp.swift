@@ -12,8 +12,11 @@ import SwiftUI
 struct PokemonTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView(store: Store(initialState: Root.State(), reducer: {
-                Root()
+            RootView(store:
+                        Store(initialState: Root.State(),
+                              reducer: { Root() },
+                              withDependencies: { dependencyValues in
+                dependencyValues.pokemonAPIClient = .liveValue
             }))
         }
     }

@@ -13,6 +13,7 @@
 		045FE46D2C48104800B1EEE7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FE46C2C48104800B1EEE7 /* RootView.swift */; };
 		045FE46F2C48133000B1EEE7 /* FavoriteFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FE46E2C48133000B1EEE7 /* FavoriteFeature.swift */; };
 		045FE4712C48139800B1EEE7 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FE4702C48139800B1EEE7 /* FavoriteView.swift */; };
+		045FE4742C48409D00B1EEE7 /* PokemonAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045FE4732C48409D00B1EEE7 /* PokemonAPIClient.swift */; };
 		0483975C2C47F8080024560E /* PokemonTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483975B2C47F8080024560E /* PokemonTCAApp.swift */; };
 		0483975E2C47F8080024560E /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483975D2C47F8080024560E /* RootFeature.swift */; };
 		048397602C47F8090024560E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0483975F2C47F8090024560E /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		045FE46C2C48104800B1EEE7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		045FE46E2C48133000B1EEE7 /* FavoriteFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFeature.swift; sourceTree = "<group>"; };
 		045FE4702C48139800B1EEE7 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		045FE4732C48409D00B1EEE7 /* PokemonAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
 		048397582C47F8080024560E /* PokemonTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0483975B2C47F8080024560E /* PokemonTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTCAApp.swift; sourceTree = "<group>"; };
 		0483975D2C47F8080024560E /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		045FE4722C48406F00B1EEE7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				045FE4732C48409D00B1EEE7 /* PokemonAPIClient.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		0483974F2C47F8080024560E = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +144,7 @@
 		0483975A2C47F8080024560E /* PokemonTCA */ = {
 			isa = PBXGroup;
 			children = (
+				045FE4722C48406F00B1EEE7 /* Dependencies */,
 				045FE46B2C48102600B1EEE7 /* Features */,
 				0483975B2C47F8080024560E /* PokemonTCAApp.swift */,
 				0483975F2C47F8090024560E /* Assets.xcassets */,
@@ -309,6 +320,7 @@
 				045FE46F2C48133000B1EEE7 /* FavoriteFeature.swift in Sources */,
 				045FE46A2C480FE800B1EEE7 /* PokemonView.swift in Sources */,
 				045FE4712C48139800B1EEE7 /* FavoriteView.swift in Sources */,
+				045FE4742C48409D00B1EEE7 /* PokemonAPIClient.swift in Sources */,
 				0483975E2C47F8080024560E /* RootFeature.swift in Sources */,
 				0483975C2C47F8080024560E /* PokemonTCAApp.swift in Sources */,
 				045FE4682C480F5400B1EEE7 /* PokemonFeature.swift in Sources */,
