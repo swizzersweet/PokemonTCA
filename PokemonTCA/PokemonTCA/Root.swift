@@ -10,9 +10,11 @@ import SwiftUI
 
 @Reducer
 struct Root {
+    enum Tab { case counter, profile }
+    
     @ObservableState
-    struct State: Equatable {
-        
+    struct State {
+        var currentTab = Tab.counter
     }
     
     enum Action: Sendable {

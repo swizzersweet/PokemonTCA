@@ -15,11 +15,6 @@
 		048397772C47F8090024560E /* PokemonTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048397762C47F8090024560E /* PokemonTCAUITests.swift */; };
 		048397792C47F8090024560E /* PokemonTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048397782C47F8090024560E /* PokemonTCAUITestsLaunchTests.swift */; };
 		048397872C47F8EA0024560E /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 048397862C47F8EA0024560E /* ComposableArchitecture */; };
-		0483978A2C4805900024560E /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 048397892C4805900024560E /* Apollo */; };
-		0483978E2C4805900024560E /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0483978D2C4805900024560E /* ApolloAPI */; };
-		048397902C4805900024560E /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 0483978F2C4805900024560E /* ApolloSQLite */; };
-		048397922C4805900024560E /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 048397912C4805900024560E /* ApolloTestSupport */; };
-		048397932C48060F0024560E /* Apollo-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 0483978B2C4805900024560E /* Apollo-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				048397932C48060F0024560E /* Apollo-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,10 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				048397872C47F8EA0024560E /* ComposableArchitecture in Frameworks */,
-				0483978A2C4805900024560E /* Apollo in Frameworks */,
-				048397902C4805900024560E /* ApolloSQLite in Frameworks */,
-				048397922C4805900024560E /* ApolloTestSupport in Frameworks */,
-				0483978E2C4805900024560E /* ApolloAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,11 +161,6 @@
 			name = PokemonTCA;
 			packageProductDependencies = (
 				048397862C47F8EA0024560E /* ComposableArchitecture */,
-				048397892C4805900024560E /* Apollo */,
-				0483978B2C4805900024560E /* Apollo-Dynamic */,
-				0483978D2C4805900024560E /* ApolloAPI */,
-				0483978F2C4805900024560E /* ApolloSQLite */,
-				048397912C4805900024560E /* ApolloTestSupport */,
 			);
 			productName = PokemonTCA;
 			productReference = 048397582C47F8080024560E /* PokemonTCA.app */;
@@ -251,7 +236,6 @@
 			mainGroup = 0483974F2C47F8080024560E;
 			packageReferences = (
 				048397852C47F8EA0024560E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 048397592C47F8080024560E /* Products */;
 			projectDirPath = "";
@@ -632,14 +616,6 @@
 				version = 1.11.2;
 			};
 		};
-		048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:apollographql/apollo-ios.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.13.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -647,31 +623,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 048397852C47F8EA0024560E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		048397892C4805900024560E /* Apollo */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = Apollo;
-		};
-		0483978B2C4805900024560E /* Apollo-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = "Apollo-Dynamic";
-		};
-		0483978D2C4805900024560E /* ApolloAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloAPI;
-		};
-		0483978F2C4805900024560E /* ApolloSQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloSQLite;
-		};
-		048397912C4805900024560E /* ApolloTestSupport */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 048397882C4805900024560E /* XCRemoteSwiftPackageReference "apollo-ios" */;
-			productName = ApolloTestSupport;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
