@@ -12,6 +12,12 @@ struct RootView: View {
     @Bindable var store: StoreOf<Root>
     
     var body: some View {
-        Text("root view")
+        TabView(selection: $store.currentTab.sending(\.selectTab)) {
+            PokemonView(store: store.scope(state: \.pokemonFeature, action: \.pokemonFeature))
+                .tabItem { Text("Pokemon") }
+            
+            FavoriteView(store: store.scope(state: \.favoriteFeature, action: \.favoriteFeature))
+                .tabItem { Text("Favorite") }
+        }
     }
 }

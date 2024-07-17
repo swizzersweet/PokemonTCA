@@ -1,5 +1,5 @@
 //
-//  PokemonView.swift
+//  FavoriteView.swift
 //  PokemonTCA
 //
 //  Created by Jonathan Menard on 2024-07-17.
@@ -8,10 +8,10 @@
 import ComposableArchitecture
 import SwiftUI
 
-struct PokemonView: View {
-    @Bindable var store: StoreOf<PokemonFeature>
+struct FavoriteView: View {
+    @Bindable var store: StoreOf<FavoriteFeature>
     
     var body: some View {
-        Text("Pokemon View!")
+        Text("Favorite view placeholder")
     }
 }
