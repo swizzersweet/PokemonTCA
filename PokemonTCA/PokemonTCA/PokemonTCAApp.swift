@@ -5,13 +5,16 @@
 //  Created by Jonathan Menard on 2024-07-17.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 @main
 struct PokemonTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(store: Store(initialState: Root.State(), reducer: {
+                Root()
+            }))
         }
     }
 }
