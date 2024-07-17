@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045FE4662C480EB700B1EEE7 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 045FE4652C480EB700B1EEE7 /* Apollo */; };
 		0483975C2C47F8080024560E /* PokemonTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483975B2C47F8080024560E /* PokemonTCAApp.swift */; };
 		0483975E2C47F8080024560E /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483975D2C47F8080024560E /* Root.swift */; };
 		048397602C47F8090024560E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0483975F2C47F8090024560E /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048397872C47F8EA0024560E /* ComposableArchitecture in Frameworks */,
+				045FE4662C480EB700B1EEE7 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +163,7 @@
 			name = PokemonTCA;
 			packageProductDependencies = (
 				048397862C47F8EA0024560E /* ComposableArchitecture */,
+				045FE4652C480EB700B1EEE7 /* Apollo */,
 			);
 			productName = PokemonTCA;
 			productReference = 048397582C47F8080024560E /* PokemonTCA.app */;
@@ -236,6 +239,7 @@
 			mainGroup = 0483974F2C47F8080024560E;
 			packageReferences = (
 				048397852C47F8EA0024560E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				045FE4642C480EB700B1EEE7 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 048397592C47F8080024560E /* Products */;
 			projectDirPath = "";
@@ -608,6 +612,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		045FE4642C480EB700B1EEE7 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apollographql/apollo-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.13.0;
+			};
+		};
 		048397852C47F8EA0024560E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:pointfreeco/swift-composable-architecture.git";
@@ -619,6 +631,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		045FE4652C480EB700B1EEE7 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 045FE4642C480EB700B1EEE7 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
 		048397862C47F8EA0024560E /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 048397852C47F8EA0024560E /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
